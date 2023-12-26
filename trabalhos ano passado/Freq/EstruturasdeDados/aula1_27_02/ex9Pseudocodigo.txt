@@ -1,0 +1,34 @@
+// Autor: Jorge Martins
+// Disciplina: Estruturas de dados / Programação II
+// Exercicio: 9 alinea C.
+
+Algoritmo "Seleção Linear"
+
+var
+aux, counter<-0, auxi<-0, vetor[], tamanho, a, b: Inteiros
+
+Inicio
+
+  leia (tamanho); // aqui o utilizador ira depois inserir valores no vetor mas achei desnecessário estar a demonstrar em pseudocodigo.
+
+  vetor[] declarar vetor de inteiros com dimensão tamanho
+  a <- tamanho-1
+  b <- 0
+  aux <- vetor[0]
+
+  Enquanto( a>= 0) Faz
+    Enquanto(b < tamanho) Faz
+      Se aux <= vetor[b] entao
+        aux <- vet[b]
+        counter <- b
+      fim se
+    fim Enquanto
+    auxi <- vet[a]
+    vet[a] <- aux;
+    vet[counter] <- auxi; // passa a ter o valor mais a esquerda..
+    aux <- vet[0];
+  fim Enquanto
+
+// apos esta logica basta usar um ciclo para escrever o vetor no ecran já alinhado de forma crescente..
+
+fim Algoritmo

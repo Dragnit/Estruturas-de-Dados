@@ -1,0 +1,1 @@
+verificar que esta a dar erro no buffer.
